@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 :root {
     --padding: 2em;
     --EntryFieldspacing: 0.25em;
     --complementaryColor: rgb(152,16,250);
+    --Tutor-complementaryColor: rgb(246,74,0);
     --background-color: rgb(251,246,251);
     --childSpacing: 0.35em;
     --border-radius: 2em;
@@ -12,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -25,8 +29,8 @@ body {
 }
 
 .LoginPage {
-    width: clamp(350px, 40%, 1000px);
-    aspect-ratio: 16/15;
+    width: clamp(350px, 40%, 700px);
+    aspect-ratio: 16/17;
     border-radius: var(--border-radius);
     background-color: white;
     padding: var(--padding);
@@ -34,11 +38,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 2px 2px 20px 10px var(--background-color);
 }
 
 
 .LoginPage > .LoginPage__description {
-    height: 28%;
+    height: 22%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,7 +59,7 @@ body {
 }
 
 .LoginPage > .LoginPage__loginDetails {
-    height: 45%;
+    height: 50%;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -64,7 +69,20 @@ body {
 input {
     border: none;
     background-color: inherit;
+    height: inherit;
+    width: 100%;
 }
+
+input:hover {
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
 .LoginPage > .LoginPage__loginDetails > .LoginPage__loginDetails-EntryField {
     height: 40px;
     border: solid 2px var(--background-color);
@@ -85,4 +103,58 @@ label {
     margin-bottom: -10px;
 }
 
+.LoginPage > .LoginPage__loginDetails > .LoginPage__loginDetails-RememberField {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+label#remember {
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+ 
+label#remember > input {
+    height: 15px;
+    width: 15px;
+}
+
+#Login {
+    height: 40px;
+    border-radius: var(--border-radius-inner);
+    border: none;
+    color: white;
+    background-color: var(--complementaryColor);
+}
+
+#LoginPage__selectorSection {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#signin {
+    color: var(--complementaryColor);
+}
+#TutorSignin {
+    color: var(--Tutor-complementaryColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+#LoginPage__selectorSection span {
+    width: inherit;
+    height: 2px;
+    background-color: var(--background-color);
+}

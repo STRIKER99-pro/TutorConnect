@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
-    <title>Student Login</title>
+    <link rel="stylesheet" href="TutorStyles.css">
+    <title>Tutor Login</title>
 </head>
 <body>
     <div class="LoginPage">
         <div class="LoginPage__description">
-            <img src="" alt="tutorConnectLogo"/>
-            <p>Welcome back</p>
-            <p>Login to continue your learning journey</p>
+            <img src="" alt="ConnectLogo"/>
+            <p>Tutor Portal</p>
+            <p>Login to manage your courses</p>
         </div>
         <form class="LoginPage__loginDetails">
             <label for="email">Email address</label>
@@ -26,21 +27,11 @@
                 <input class="password" type="password" placeholder="Enter Your password"/>
             </div>
             
-            <div class="LoginPage__loginDetails-RememberField">
-                <label id="remember">
-                    <input type="checkbox" name="checkbox" id="checkbox"/>
-                    Remember me
-                </label>
-                
-                <p>Forgot password?</p>
-            </div>
-
-            <button id="Login" type="submit">Login</button>
+    
+            <button id="Tutor_Login" type="submit">Login as Tutor</button>
         </form>
         <div id="LoginPage__selectorSection">
-            <p>Don't have an account? <a id="signin" href="../SignUp/Dev.html">Sign up</a> </p>
-            <span></span>
-            <p>Are you a tutor? <a id="TutorSignin" href="TutorLogin.html">Tutor Login</a></p>
+            <p>Are you a student? <a id="signin" href="login.html">Log in</a> </p>
         </div>
     </div>
 </body>

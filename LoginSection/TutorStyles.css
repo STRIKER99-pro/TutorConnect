@@ -1,0 +1,11 @@
+:root {
+    --Tutor-complementaryColor: rgb(246,74,0);
+}
+
+#Tutor_Login {
+    height: 60px;
+    border-radius: var(--border-radius-inner);
+    border: none;
+    color: white;
+    background-color: var(--Tutor-complementaryColor);
+}
