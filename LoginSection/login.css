@@ -1,0 +1,88 @@
+:root {
+    --padding: 2em;
+    --EntryFieldspacing: 0.25em;
+    --complementaryColor: rgb(152,16,250);
+    --background-color: rgb(251,246,251);
+    --childSpacing: 0.35em;
+    --border-radius: 2em;
+    --border-radius-inner: 0.5em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.LoginPage {
+    width: clamp(350px, 40%, 1000px);
+    aspect-ratio: 16/15;
+    border-radius: var(--border-radius);
+    background-color: white;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.LoginPage > .LoginPage__description {
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.LoginPage > .LoginPage__description img {
+    width: 20%;
+    height: 40%;
+    align-self: center;
+    background-color: red;
+    border-radius: 999%;
+}
+
+.LoginPage > .LoginPage__loginDetails {
+    height: 45%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    background-color: inherit;
+}
+.LoginPage > .LoginPage__loginDetails > .LoginPage__loginDetails-EntryField {
+    height: 40px;
+    border: solid 2px var(--background-color);
+    border-radius: var(--border-radius-inner) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.LoginPage > .LoginPage__loginDetails > .LoginPage__loginDetails-EntryField img {
+    height: inherit;
+    aspect-ratio: 1/1;
+    background-color: blue;
+    border-radius: 999%;
+}
+label {
+    margin-bottom: -10px;
+}
+
+
