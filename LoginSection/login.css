@@ -54,7 +54,6 @@ body {
     width: 20%;
     height: 40%;
     align-self: center;
-    background-color: red;
     border-radius: 999%;
 }
 
@@ -94,9 +93,9 @@ input:focus {
 }
 
 .LoginPage > .LoginPage__loginDetails > .LoginPage__loginDetails-EntryField img {
-    height: inherit;
+    height: 30px;
     aspect-ratio: 1/1;
-    background-color: blue;
+    width: 30px;
     border-radius: 999%;
 }
 label {
