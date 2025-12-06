@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background: #f7f5ff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.title {
+    font-size: 28px;
+    color: #333;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    width: 65%;
+}
+
+.right {
+    width: 35%;
+}
+
+.card, .summary-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.course-info {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.course-info img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.details .detail-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.card-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background: #a248ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pay-btn:hover {
+    background: #9220ff;
+}
+
+/* Summary card */
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.total p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.after-pay {
+    background: #f5eaff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.checks {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+    color: #4CAF50;
+}
