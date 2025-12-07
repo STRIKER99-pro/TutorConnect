@@ -7,6 +7,7 @@
 
 body{
     padding-top: 50px;
+    background:#f7f5ff;;
     font-family: roboto, arial;
     margin-right: 10px;
 }
@@ -16,7 +17,7 @@ header{
     top: 0;
     border-bottom: solid;
     border-width: 1px;
-    border-color: gray;
+    border-color: rgb(210, 210, 210);
     height: 50px; 
     width: 100%;
 
@@ -24,13 +25,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+      font-weight: 800;
+    background-color: white;
     
 }
 
-header{
-    font-weight: 800;
-}
 
 section{
     margin-left: 60px;
@@ -54,14 +53,47 @@ section{
     color: rgb(77, 77, 77);
 }
 
+.subheaderdiv1{
+ display: flex;
+ align-items: center;
+ margin-left: 10px;
+}
+
+.logo{
+    height: 40px;
+    width: 50px;
+    
+}
+.subheaderdiv2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    
+}
 .subheaderdiv2 a{
     margin-right: 10px;
+
+}
+
+.exit{
+ height: 40px;
+ width: 40px;
+ border-radius: 40px;
+}
+
+.srch img{
+  height: 20px;
+  width: 40px;  
 }
 
 .srch{
     margin-bottom: 15px;
     display: flex;
+    justify-content: center;
 }
+
+
 
 .srch button{
  border-style: solid;
@@ -88,7 +120,12 @@ section{
     border-bottom-right-radius: 10px;
     border-width: 1px;
     outline: 0;
+
+    
 }
+
+
+
 
 .filters{
     display: flex;
@@ -97,6 +134,7 @@ section{
     color:rgb(68, 68, 68); 
     align-items: center;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 .filters a{
@@ -105,6 +143,7 @@ section{
     padding: 4px 7px 4px 7px;
     border-radius: 10px;
     transition: padding 0.3s, background-color 0.5s;
+    background-color: white;
 }
 
 .filters a:hover{
@@ -120,6 +159,7 @@ section{
   align-items: center;
   column-gap: 10px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .level a{
@@ -128,6 +168,7 @@ section{
     padding: 4px 7px 4px 7px;
     border-radius: 10px;
     transition: padding 0.3s, background-color 0.5s;
+    background-color: white;
 
 }
 
@@ -163,13 +204,15 @@ section{
  width: 100%;
  position: relative;
  border-radius: 10px;
+ cursor: pointer;
 }
 
 .courses{
     border-style: solid;
     border-width: 1px;
-    border-color: gray;
+    border-color: rgb(183, 183, 183);
     border-radius: 20px;
+    background-color: white;
 }
 
 .tooltip{
@@ -203,12 +246,12 @@ section{
     color: white;
 }
 
-.purple{
+.levels{
     background-color: rgb(187, 0, 187);
     cursor: pointer;
 }
 
-.orange{
+.type{
     background-color: rgb(223, 134, 0);
     cursor: pointer;
 }
@@ -216,7 +259,9 @@ section{
 .dest{
     margin-left: 20px;
 }
+.srch{
 
+}
 .des{
     font-weight: bold;
     margin-bottom: 10px;
