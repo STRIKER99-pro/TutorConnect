@@ -144,8 +144,8 @@
   
   .hero-decoration {
     position: absolute;
-    top: 10%;
-    right: -10%;
+    top: 20%;
+    right: 3%;
     width: 50%;
     opacity: 0.8;
   }
@@ -308,6 +308,7 @@
     box-shadow: var(--shadow);
     overflow: hidden;
     position: relative;
+    padding: 1em;
   }
   
   .course-card.featured {
