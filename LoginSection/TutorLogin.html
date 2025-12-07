@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="TutorStyles.css">
+    <title>Tutor Login</title>
+</head>
+<body>
+    <div class="LoginPage">
+        <div class="LoginPage__description">
+            <img src="../assets/WhatsApp_Image_2025-11-29_at_10.33.45-removebg-preview.png" alt="ConnectLogo"/>
+            <p>Tutor Portal</p>
+            <p>Login to manage your courses</p>
+        </div>
+        <form class="LoginPage__loginDetails">
+            <label for="email">Email address</label>
+            <div id="email" class="LoginPage__loginDetails-EntryField">
+                <img src="../assets//icons8-email-48.png" alt="email"/>
+                <input class="email" type="email" placeholder="Enter Your email"/>
+            </div>
+            
+            <label for="password">Password</label>
+            <div id="password" class="LoginPage__loginDetails-EntryField">
+                <img src="../assets/icons8-lock-30.png" alt="lock"/>
+                <input class="password" type="password" placeholder="Enter Your password"/>
+            </div>
+            
+    
+            <button id="Tutor_Login" type="submit">Login as Tutor</button>
+        </form>
+        <div id="LoginPage__selectorSection">
+            <p>Are you a student? <a id="signin" href="login.html">Log in</a> </p>
+        </div>
+    </div>
+</body>
+</html>

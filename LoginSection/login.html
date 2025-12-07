@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Student Login</title>
+</head>
+<body>
+    <div class="LoginPage">
+        <div class="LoginPage__description">
+            <img src="../assets/WhatsApp_Image_2025-11-29_at_10.33.45-removebg-preview.png" alt="tutorConnectLogo"/>
+            <p>Welcome back</p>
+            <p>Login to continue your learning journey</p>
+        </div>
+        <form class="LoginPage__loginDetails">
+            <label for="email">Email address</label>
+            <div id="email" class="LoginPage__loginDetails-EntryField">
+                <img src="../assets/icons8-email-48.png" alt="email"/>
+                <input class="email" type="email" placeholder="Enter Your email"/>
+            </div>
+            
+            <label for="password">Password</label>
+            <div id="password" class="LoginPage__loginDetails-EntryField">
+                <img src="../assets/icons8-lock-30.png" alt="lock"/>
+                <input class="password" type="password" placeholder="Enter Your password"/>
+            </div>
+            
+            <div class="LoginPage__loginDetails-RememberField">
+                <label id="remember">
+                    <input type="checkbox" name="checkbox" id="checkbox"/>
+                    Remember me
+                </label>
+                
+                <p>Forgot password?</p>
+            </div>
+
+            <button id="Login" type="submit">Login</button>
+        </form>
+        <div id="LoginPage__selectorSection">
+            <p>Don't have an account? <a id="signin" href="../SignUp/Dev.html">Sign up</a> </p>
+            <span></span>
+            <p>Are you a tutor? <a id="TutorSignin" href="TutorLogin.html">Tutor Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
