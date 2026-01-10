@@ -14,17 +14,17 @@
             <p>Tutor Portal</p>
             <p>Login to manage your courses</p>
         </div>
-        <form class="LoginPage__loginDetails">
+        <form class="LoginPage__loginDetails" id="tutorLogin">
             <label for="email">Email address</label>
             <div id="email" class="LoginPage__loginDetails-EntryField">
                 <img src="../assets//icons8-email-48.png" alt="email"/>
-                <input class="email" type="email" placeholder="Enter Your email"/>
+                <input class="email" type="email" name="email" placeholder="Enter Your email"/>
             </div>
             
             <label for="password">Password</label>
             <div id="password" class="LoginPage__loginDetails-EntryField">
                 <img src="../assets/icons8-lock-30.png" alt="lock"/>
-                <input class="password" type="password" placeholder="Enter Your password"/>
+                <input class="password" type="password"  name="password" placeholder="Enter Your password"/>
             </div>
             
     
@@ -35,4 +35,5 @@
         </div>
     </div>
 </body>
+<script src="tutorLogic.js"></script>
 </html>

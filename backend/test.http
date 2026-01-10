@@ -1,0 +1,10 @@
+http://localhost:8080/api/Tutors/Suiii@gmail.com/1236
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 30
+etag: W/"1e-+KV4CuAJSxsr3hHr5TbxTCMtRdo"
+date: Tue, 30 Dec 2025 12:27:22 GMT
+connection: close
