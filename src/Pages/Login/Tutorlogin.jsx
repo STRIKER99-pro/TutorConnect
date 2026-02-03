@@ -49,7 +49,7 @@ function TutorLogin() {
         case 200:
           alert(output.message || "Login successful");
           // Redirect or handle successful login here
-          navigate("/Search")
+          navigate("/SearchCourse")
           break;
         default:
           alert("Unexpected error occurred");

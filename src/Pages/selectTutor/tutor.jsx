@@ -1,9 +1,8 @@
-import { useEffect } from "react";
+
 import "./tutor.css"
 
 
 const Tutor = () => {
-    
     
   return (
 

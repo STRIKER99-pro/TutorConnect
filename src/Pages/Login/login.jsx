@@ -55,7 +55,7 @@ function LoginPage() {
           alert(output.message);
           break;
         case 200:
-          navigate("/Search")
+          navigate("/SearchCourse")
           alert(output.message);
           break;
         default:

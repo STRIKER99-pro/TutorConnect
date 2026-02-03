@@ -1,8 +1,8 @@
 const express = require('express');
-const router = express.Router();
+const Paymentrouter = express.Router();
 const { SetPaymentMethod, getSelectCourseInfo } = require("../controllers/paymentcontroller.js")
 
-router.get('/tutor/:email/:id', getSelectCourseInfo);
-router.post('/paymentMethod', SetPaymentMethod);
+Paymentrouter.get('/tutor/:email/:id', getSelectCourseInfo);
+Paymentrouter.post('/paymentMethod', SetPaymentMethod);
 
-module.exports = router;
+module.exports = Paymentrouter;

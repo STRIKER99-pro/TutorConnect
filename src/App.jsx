@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TutorLogin from "./Pages/Login/Tutorlogin.jsx";
 import LoginPage from "./Pages/Login/login";
 import Signup from "./Pages/signup/Signup.jsx";
-import Search from "./Pages/SearchCourse/search.jsx";
-import Tutor from "./Pages/selectTutor/tutor.jsx"
+import Tutor from "./Pages/selectTutor/tutor.jsx";
+import SearchCourse from "./Pages/SearchCourse/SearchCourse.jsx";
+import TutorPage from "./Pages/viewTutor/dt.jsx";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Route exact path="/" element={<Signup />} />
         <Route path="/StudentLogin" element={<LoginPage />} />
         <Route path="/TutorLogin" element={<TutorLogin />} />
-        <Route path="/Search" element={<Search/>}/> 
-        <Route path="/SelectTutor" element={<Tutor/>}/> 
+        <Route path="/SelectTutor" element={<Tutor />} />
+        <Route path="/SearchCourse" element={<SearchCourse />} />
+        <Route path="/viewTutor" element={<TutorPage />} />
       </Routes>
     </BrowserRouter>
   );
