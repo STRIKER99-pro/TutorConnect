@@ -58,7 +58,7 @@ function Content() {
                 case 200:
                     alert('User created successfully');
                     // redirection to select course should be done here ( Arthur this is your part )
-                    navigate("/Search");
+                    navigate("/SearchCourse");
                     break;
                 case 500:
                     setError('Server error. Please try again later.');

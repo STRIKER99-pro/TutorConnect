@@ -1,4 +1,4 @@
-import connection from "../config/databaseConnect";
+const connection = require("../config/databaseConnect.js");
 
 const getSelectCourseInfo = async (req, res) => {
   // getting course name and tutor name 
