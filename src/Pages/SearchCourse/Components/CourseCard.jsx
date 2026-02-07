@@ -13,15 +13,11 @@ function CourseCard({ course }) {
   return (
     <div className="courses" onClick={HandleNavigation}>
       <div className="course-preview">
-        <div className="img-container">
-          <a>
             <img 
               className="img" 
               src={course.image || Algebra} 
               alt={course.title}
             />
-          </a>
-        </div>
         <div className="price-section">
           <a className="tooltip">{course.price}</a>
         </div>

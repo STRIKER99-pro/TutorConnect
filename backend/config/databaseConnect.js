@@ -2,7 +2,7 @@ const sql = require("mysql2");
 
 const connection = sql.createConnection({
   host: "localhost",
-  database: "tutorconnectdatabase",
+  database: "TutorConnectDatabase",
   user: "Tutorian",
   password: "quantum",
   port: 3306
