@@ -1,3 +1,5 @@
+
+//import { MdEmail } from 'react-icon/md';
 import { useNavigate } from "react-router-dom";
 
 import React, { useState } from "react";
@@ -74,6 +76,7 @@ function Content() {
     return (
        <React.Fragment>
             <form action="POST" className="sign-up-form" onSubmit={handleSubmit}>
+                
                 <div>
                 <input type="text" 
                 className="input-name" 
@@ -82,6 +85,7 @@ function Content() {
                 onChange={handleChange}
                 required
                 />
+                {/* <MdEmail /> */}
                 </div>
                 <input type="email" 
                 className="input-email"

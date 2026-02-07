@@ -64,7 +64,7 @@ function TutorLogin() {
   };
 
   return (
-    <div className="LoginPage">
+    <div className="LoginPage" id="tutor_page">
       <div className="LoginPage__description">
         <img src={logo} alt="ConnectLogo" />
         <p>Tutor Portal</p>
@@ -72,7 +72,7 @@ function TutorLogin() {
       </div>
       <form
         className="LoginPage__loginDetails"
-        id="tutorLogin"
+        id="tutor_Login"
         onSubmit={handleTutorSubmission}
       >
         <label htmlFor="tutorEmail">Email address</label>
@@ -105,11 +105,12 @@ function TutorLogin() {
           />
         </div>
 
-        <button id="Tutor_Login" type="submit">
-          Login as Tutor
+         <button id="Login" type="submit">
+          Login
         </button>
       </form>
       <div id="LoginPage__selectorSection">
+
         <p>
           Are you a student?{" "}
           <a id="signin" href="#" onClick={(e) => {
@@ -119,13 +120,15 @@ function TutorLogin() {
             Student Login
           </a>{" "}
         </p>
-        <span></span>
         <p style={{marginTop: '10px'}}>
           Don't have an account?{" "}
           <a id="signin" href="../dev.tool/index.html">
             Sign up as Tutor
           </a>
         </p>
+        <button id="Tutor_Login" type="submit">
+          Login as Tutor
+        </button>
       </div>
     </div>
   );

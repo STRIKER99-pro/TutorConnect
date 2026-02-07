@@ -1,16 +1,16 @@
 const sql = require("mysql2");
 
 const connection = sql.createConnection({
-    host: "localhost",
-    database: "TutorConnectDatabase",
-    user: "Tutorian",
-    password: "quantum",
-    ssl: false
+  host: "localhost",
+  database: "tutorconnectdatabase",
+  user: "Tutorian",
+  password: "quantum",
+  port: 3306
 });
 
 connection.connect((error) => {
     if ( error ){
-        console.log("There is an error");
+        console.log(`${error}`);
         return;
     }
     console.log("Successful connection");

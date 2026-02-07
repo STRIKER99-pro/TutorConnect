@@ -1,9 +1,10 @@
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'roboto', sans-serif;
 }
 
 body {
@@ -14,6 +15,14 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  position: static;
+  z-index: none;
+}
+
+.sign-up {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -21,8 +30,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin-top: 50px;
   padding: 15px;
+  width: 55vh;
 }
 
 .header p {
@@ -43,19 +53,24 @@ body {
 }
 
 .sign-up-form input {
-    width: 65vh;
+    width: 50vh;
     height: 3rem;
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
 }
+.sign-up-form input:hover {
+  border: 0.5px solid;
+}
+
 
 button {
   margin: 20px 0 20px 20px;
   padding: 10px;
-  width: 7rem;
-  font: size 25px;
+  width: 20rem;
+  font-size: 20px;
   border: 1px solid;
   border-radius: 5px;
   color: #ffff;
@@ -64,15 +79,27 @@ button {
 
 
 .login-directives {
-  margin: 2px 0 20px 100px;
-  padding: 15px;
+  margin: 15px 0 10px 0px;
+  padding: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  border-top: 2pxL solid grey;
+  width: 100%;
 }
 
 .login-directives p{
-  margin-bottom: 15px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .login-directives p a {
   color: magenta;
 }
+img {
+  width: 20vh;
+  height: 20vh;
+  margin-top: 160px;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+}
+
+

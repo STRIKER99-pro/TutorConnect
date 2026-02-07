@@ -163,7 +163,7 @@ function LoginPage() {
         onClick={handleTutorLogin}
         style={{marginTop: '20px'}}
       >
-        Login as Tutor
+        Login as Student
       </button>
     </div>
   );
